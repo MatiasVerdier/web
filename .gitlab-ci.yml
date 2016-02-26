@@ -1,0 +1,8 @@
+image: jojomi/hugo
+
+pages:
+  script:
+  - hugo
+  artifacts:
+    paths:
+    - public
