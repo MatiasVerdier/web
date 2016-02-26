@@ -4,8 +4,8 @@ layoutdir: "layouts"
 publishdir: "public"
 indexes:
   category: "categories"
-baseurl: "https://axil.gitlab.io/pages-hugo"
-title: "Hugo Blog Template for GitHub Pages"
+baseurl: "https://gitlab-examples.gitlab.io/pages-hugo"
+title: "Hugo Blog Template for GitLab Pages"
 canonifyurls: true
 theme: "Lanyon"
 ...
