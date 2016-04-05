@@ -1,0 +1,10 @@
+contentdir    = "content"
+layoutdir     = "layouts"
+publishdir    = "public"
+baseurl       = "/hugo"
+title         = "Hugo Blog Template for GitLab Pages"
+canonifyurls  = true
+theme         = "Lanyon"
+
+[indexes]
+  category  = "categories"
