@@ -1,7 +1,7 @@
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
-baseurl       = "/hugo"
+baseurl       = "https://pages.gitlab.io/hugo/"
 title         = "Hugo Blog Template for GitLab Pages"
 canonifyurls  = true
 theme         = "Lanyon"
