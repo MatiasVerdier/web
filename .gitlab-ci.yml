@@ -2,6 +2,7 @@ image: publysher/hugo
 
 pages:
   script:
+  - apt-get install git
   - hugo
   artifacts:
     paths:
