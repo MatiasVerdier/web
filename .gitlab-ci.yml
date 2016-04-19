@@ -5,13 +5,7 @@ cache:
     - /var/cache/apt/archives/
 
 before_script:
-  - apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev build-essential
-  - wget https://github.com/git/git/archive/v1.9.4.tar.gz
-  - tar -zxf v1.9.4.tar.gz
-  - cd git-1.9.4
-  - git config --global user.name "NewUser"
-  - git config --global user.email newuser@example.com
-  - git config --list
+  - dpkg -l
 
 pages:
   script:
