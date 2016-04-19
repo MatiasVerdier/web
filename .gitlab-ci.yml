@@ -1,5 +1,9 @@
 image: publysher/hugo
 
+cache:
+    paths:
+    - /var/cache/apt/archives/
+
 before_script:
   - apt-get update
   - apt-get -qq install git-core
