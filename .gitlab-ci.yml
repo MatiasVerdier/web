@@ -2,7 +2,7 @@ image: publysher/hugo
 
 pages:
   script:
-  - sudo apt-get install git-all
+  - apt-get install git-all
   - hugo
   artifacts:
     paths:
