@@ -5,7 +5,7 @@ cache:
     - /var/cache/apt/archives/
 
 before_script:
-  - apt-get -qq install -y git
+  - apt-get install git-core
 
 pages:
   script:
