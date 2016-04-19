@@ -6,7 +6,7 @@ cache:
 
 before_script:
   - apt-get update
-  - apt-get install git-core
+  - apt-get -qq install git-core
   - git config --global user.name "User Name"
   - git config --global user.email "user@example.com"
   - git config --list
