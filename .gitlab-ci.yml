@@ -5,7 +5,11 @@ cache:
     - /var/cache/apt/archives/
 
 before_script:
-  - dpkg -l
+  - apt-get update
+  - apt-get install git-core
+  - git config --global user.name "User Name"
+  - git config --global user.email "user@example.com"
+  - git config --list
 
 pages:
   script:
