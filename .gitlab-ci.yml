@@ -1,5 +1,12 @@
 image: publysher/hugo
 
+cache:
+    paths:
+    - /var/cache/apt/archives/
+
+before_script:
+  - noninteractive apt-get -qq install -y --no-install-recommends git-all
+
 pages:
   script:
   - hugo
