@@ -1,16 +1,5 @@
 image: publysher/hugo
 
-cache:
-    paths:
-    - /var/cache/apt/archives/
-
-before_script:
-  - apt-get update
-  - apt-get -qq install git-core
-  - git config --global user.name "User Name"
-  - git config --global user.email "user@example.com"
-  - git config --list
-
 pages:
   script:
   - hugo
