@@ -1,5 +1,11 @@
 image: publysher/hugo
 
+test:
+  script:
+  - hugo
+  except:
+  - master
+
 pages:
   script:
   - hugo
