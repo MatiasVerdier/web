@@ -27,7 +27,14 @@ This project's static Pages are built by [GitLab CI][ci], following the steps
 defined in [`.gitlab-ci.yml`](.gitlab-ci.yml):
 
 ```
-image: publysher/hugo
+image: alpine:3.4
+
+before_script:
+  - apk update && apk add openssl
+  - wget https://github.com/spf13/hugo/releases/download/v0.16/hugo_0.16_linux-64bit.tgz
+  - echo "37ee91ab3469afbf7602a091d466dfa5  hugo_0.16_linux-64bit.tgz" | md5sum -c
+  - tar xf hugo_0.16_linux-64bit.tgz && cp ./hugo /usr/bin
+  - hugo version
 
 pages:
   script:
