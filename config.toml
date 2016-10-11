@@ -4,7 +4,7 @@ publishdir    = "public"
 baseurl       = "https://matiasvj.gitlab.io/"
 title         = "Matias Verdier | Software Developer"
 canonifyurls  = true
-theme         = "Lanyon"
+theme         = "hyde"
 
 [indexes]
   category  = "categories"
