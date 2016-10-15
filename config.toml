@@ -2,9 +2,14 @@ contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
 baseurl       = "https://matiasvj.gitlab.io/"
-title         = "Matias Verdier | Software Developer"
+title         = "Matías Verdier"
 canonifyurls  = true
 theme         = "hyde"
+metadataformat= "yaml"
 
 [indexes]
-  category  = "categories"
+category    = "categories"
+
+[params]
+author      = "Matías Verdier"
+description = "Full Stack Web Developer with passion about learning and share the knowledge"
