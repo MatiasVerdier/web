@@ -6,10 +6,12 @@ title         = "Matías Verdier"
 canonifyurls  = true
 theme         = "hyde"
 metadataformat= "yaml"
+googleAnalytics = "UA-69160067-1"
 
 [indexes]
 category    = "categories"
 
 [params]
 author      = "Matías Verdier"
-description = "Full Stack Web Developer with passion about learning and share the knowledge"
+description = "Full Stack Web Developer con pasión por aprender y compartir el conocimiento"
+disqusShortname = "matiasverdier"
