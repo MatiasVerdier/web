@@ -1,17 +1,18 @@
-contentdir    = "content"
-layoutdir     = "layouts"
-publishdir    = "public"
-baseurl       = "https://matiasvj.gitlab.io/"
-title         = "Matías Verdier"
-canonifyurls  = true
-theme         = "hyde"
-metadataformat= "yaml"
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+baseurl = "https://matiasvj.gitlab.io/"
+title = "Matías Verdier"
+canonifyurls = true
+theme = "hyde"
+metadataformat = "toml"
+DefaultContentLanguage = "es"
 googleAnalytics = "UA-69160067-1"
 
 [indexes]
-category    = "categories"
+category = "categories"
 
 [params]
-author      = "Matías Verdier"
-description = "Full Stack Web Developer con pasión por aprender y compartir el conocimiento"
+author = "Matías Verdier"
+description = "Full Stack Web Developer apasionado por aprender y compartir el conocimiento"
 disqusShortname = "matiasverdier"
