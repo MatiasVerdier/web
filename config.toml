@@ -1,7 +1,7 @@
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
-baseurl = "https://matiasverdier.com"
+baseurl = "https://matiasverdier.com/"
 title = "Matías Verdier"
 canonifyurls = true
 theme = "hyde"
