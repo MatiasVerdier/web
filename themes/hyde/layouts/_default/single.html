@@ -5,8 +5,11 @@
 		<div class="content container">
 			<div class="post">
 			 	<h1>{{ .Title }}</h1>
-			  <span class="post-meta">{{ .Date.Format "02/01/2006" }} - Tiempo de lectura {{ .ReadingTime }} min.</span>
-			      {{ .Content }}
+        <span class="post-meta">
+          {{ .Date.Format "02/01/2006" }} - Tiempo de lectura {{ .ReadingTime }} min.
+        </span>
+
+			  {{ .Content }}
 			</div>
 
 			{{ if and (isset .Site.Params "disqusShortname") (ne .Site.Params.disqusShortname "") }}
