@@ -9,8 +9,10 @@ metadataformat = "toml"
 DefaultContentLanguage = "es"
 googleAnalytics = "UA-69160067-1"
 
-[indexes]
+[taxonomies]
+tag = "tags"
 category = "categories"
+recommendation = "recommendations"
 
 [params]
 author = "Matías Verdier"
