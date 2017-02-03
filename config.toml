@@ -1,7 +1,7 @@
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
-baseurl = "https://matiasvj.gitlab.io/"
+baseurl = "https://matiasverdier.com/"
 title = "Matías Verdier"
 canonifyurls = true
 theme = "hyde"
