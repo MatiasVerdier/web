@@ -9,6 +9,10 @@
           {{ .Date.Format "02/01/2006" }} - Tiempo de lectura {{ .ReadingTime }} min.
         </span>
 
+        {{ if .Params.image }}
+          <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+        {{ end }}
+
 			  {{ .Content }}
 			</div>
 
