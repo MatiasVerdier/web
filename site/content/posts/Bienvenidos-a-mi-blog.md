@@ -1,12 +1,8 @@
-+++
-Tags = [
-  "Jekyll", "GitHub Pages", "Disqus", "SemanticUI"
-]
-date = "2015-10-28T22:18:50-03:00"
-title = "Bienvenidos a mi blog!!"
-Description = ""
-
-+++
+---
+title: Bienvenidos a mi blog!!
+date: 2015-10-28T22:18:50-03:00
+tags: ["Jekyll", "GitHub Pages", "Disqus", "SemanticUI"]
+---
 
 
 He decidido crear este Blog con el propósito de compartir los distintos conocimientos que he ido adquiriendo a lo largo del tiempo, los proyectos en los que estoy trabajando, las herramientas que uso para el desarrollo, etc.

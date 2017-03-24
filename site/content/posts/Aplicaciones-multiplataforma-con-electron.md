@@ -1,13 +1,9 @@
-+++
-date = "2015-11-03T18:36:00-03:00"
-title = "Aplicaciones de escritorio multi plataforma con Electron"
-Description = ""
-Tags = [
-  "Electron"
-]
-+++
-
-![Electron](/images/electron.png)
+---
+title: Aplicaciones de escritorio multi plataforma con Electron
+date: 2015-11-03T18:36:00-03:00
+image: /images/electron.png
+tags: ["Electron"]
+---
 
 Hoy les traigo **[Electron](http://electron.atom.io/)**, una herramienta opensource muy útil para la creación de aplicaciones multiplataforma mediante tecnologías web (HTML, CSS, JS), esto permite utilizar los conocimientos que ya posees en dichas tecnologías facilitando la creación de versiones de escritorio para Windows, Mac y Linux.
 

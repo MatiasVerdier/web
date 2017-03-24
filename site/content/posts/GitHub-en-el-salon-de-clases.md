@@ -1,15 +1,9 @@
-+++
-Description = ""
-Tags = [
-  "Educacion",
-  "GitHub",
-]
-date = "2015-11-07T15:50:17-03:00"
-title = "GitHub en el salon de clases"
-
-+++
-
-![Classroom](/images/classroom.png)
+---
+title: GitHub en el salon de clases
+date: 2015-11-07T15:50:17-03:00
+image: /images/classroom.png
+tags: ["Educacion", "GitHub"]
+---
 
 **[Classroom for GitHub](https://classroom.github.com/)** es una aplicación que permite a los profesores y alumnos llevar un mejor control de las tareas que se asignan en los distintos cursos y logrando que los estudiantes se familiaricen con buenas practicas de programación como el control de versiones, seguimiento de incidentes, revisión de código, etc.
 
