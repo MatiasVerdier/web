@@ -14,7 +14,7 @@ import replace from "gulp-replace";
 import cssnano from "cssnano";
 
 const browserSync = BrowserSync.create();
-const hugoBin = "hugo";
+const hugoBin = process.env.HUGO_VERSION ? process.env.HUGO_VERSION : "hugo";
 const defaultArgs = ["-d", "../dist", "-s", "site"];
 
 gulp.task("hugo", (cb) => buildSite(cb));
