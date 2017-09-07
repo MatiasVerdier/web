@@ -1,5 +1,6 @@
 import webpack from "webpack";
 import path from "path";
+import CopyWebpackPlugin from "copy-webpack-plugin";
 
 export default {
   module: {
@@ -8,7 +9,9 @@ export default {
         test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
         loader: "file?name=/[hash].[ext]"
       },
-      {test: /\.json$/, loader: "json-loader"},
+      {
+        test: /\.json$/, loader: "json-loader"
+      },
       {
         loader: "babel",
         test: /\.js?$/,
@@ -20,8 +23,14 @@ export default {
 
   plugins: [
     new webpack.ProvidePlugin({
-      "fetch": "imports?this=>global!exports?global.fetch!whatwg-fetch"
-    })
+      fetch: "imports?this=>global!exports?global.fetch!whatwg-fetch"
+    }),
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, "./_redirects"),
+        to: path.join(__dirname, "dist")
+      }
+    ])
   ],
 
   context: path.join(__dirname, "src"),
@@ -34,5 +43,5 @@ export default {
     publicPath: "/",
     filename: "[name].js"
   },
-  externals:  [/^vendor\/.+\.js$/]
+  externals: [/^vendor\/.+\.js$/]
 };
