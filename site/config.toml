@@ -1,7 +1,7 @@
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
-baseurl = "https://matiasverdier.com/"
+baseurl = "/"
 title = "Matías Verdier"
 theme = "hyde"
 DefaultContentLanguage = "es"
