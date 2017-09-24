@@ -1,19 +1,19 @@
-import webpack from "webpack";
-import path from "path";
-import CopyWebpackPlugin from "copy-webpack-plugin";
+import webpack from 'webpack';
+import path from 'path';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 export default {
   module: {
     rules: [
       {
         test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
-        loader: "file-loader?name=/[hash].[ext]"
+        loader: 'file-loader?name=/[hash].[ext]'
       },
       {
-        test: /\.json$/, loader: "json-loader"
+        test: /\.json$/, loader: 'json-loader'
       },
       {
-        loader: "babel-loader",
+        loader: 'babel-loader',
         test: /\.js?$/,
         exclude: /node_modules/,
         query: {cacheDirectory: true}
@@ -23,25 +23,25 @@ export default {
 
   plugins: [
     new webpack.ProvidePlugin({
-      "fetch": "imports-loader?this=>global!exports?global.fetch!whatwg-fetch"
+      'fetch': 'imports-loader?this=>global!exports?global.fetch!whatwg-fetch'
     }),
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, "./_redirects"),
-        to: path.join(__dirname, "dist")
+        from: path.resolve(__dirname, './_redirects'),
+        to: path.join(__dirname, 'dist')
       }
     ])
   ],
 
-  context: path.join(__dirname, "src"),
+  context: path.join(__dirname, 'src'),
   entry: {
-    app: ["./js/app"],
-    cms: ["./js/cms"]
+    app: ['./js/app'],
+    cms: ['./js/cms']
   },
   output: {
-    path: path.join(__dirname, "dist"),
-    publicPath: "/",
-    filename: "[name].js"
+    path: path.join(__dirname, 'dist'),
+    publicPath: '/',
+    filename: '[name].js'
   },
   externals: [/^vendor\/.+\.js$/]
 };

@@ -61,7 +61,7 @@ rules:
   no-multiple-empty-lines: [2, {max: 2}]
   no-trailing-spaces: 2
   object-curly-spacing: [2, "never"]
-  quotes: [2, "double", "avoid-escape"]
+  quotes: [2, "single", "avoid-escape"]
   semi: 2
   space-before-blocks: [2, "always"]
   space-before-function-paren: [2, "never"]
@@ -77,7 +77,7 @@ rules:
   prefer-const: 2
 
   # JSX
-  jsx-quotes: [2, "prefer-double"]
+  jsx-quotes: [2, "prefer-single"]
 
   # Import
   import/no-unresolved: [1, {"commonjs": true, "amd": true}]
