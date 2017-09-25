@@ -1,5 +1,11 @@
-/*@import "imports/reset.css";*/
 
-@import "imports/poole.css";
-@import "imports/hyde.css";
-@import "imports/syntax.css";
+#home-hero .hero-body {
+  position: relative;
+}
+
+#home-hero .sketch {
+  position: absolute;
+  opacity: 0.5;
+  bottom: 0;
+  top: 0;
+}

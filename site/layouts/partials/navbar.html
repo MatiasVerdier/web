@@ -1,0 +1,31 @@
+
+<nav class="nav" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="nav-left">
+
+      <a class="nav-item" href="/">
+        {{ if .Site.Params.dynamicTitles }} {{ if .IsHome }}
+          <h1>{{ .Site.Params.navbarTitle }}</h1>
+        {{ else }}
+          <h1>{{ .Section | upper }}</h1>
+        {{ end }} {{ else }}
+          <h1>{{ .Site.Params.navbarTitle }}</h1>
+        {{ end }}
+      </a>
+    </div>
+
+    <span class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+
+    <div class="nav-menu nav-right">
+      {{ range .Site.Menus.main }}
+        <a class="nav-item" href="{{ .URL }}">
+          <i class="{{ .Identifier }}">&nbsp;</i>{{ .Name }}
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,25 @@
+{{ partial "head.html" . }}
+<body>
+   {{ partial "navbar" . }}
+
+  <section class="hero is-dark">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          {{ .Section | upper }}
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <ul>
+        {{ range .Data.Pages }}
+        <li>
+          <span><a href="{{ .RelPermalink }}">{{ .Title }}</a> <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time></span>
+        </li>
+        {{ end }}
+    </ul>
+  </div>
+</body>
+</html>

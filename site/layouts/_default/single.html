@@ -1,0 +1,37 @@
+	{{ partial "head.html" . }}
+	<body>
+    {{ partial "navbar" . }}
+
+    <section class="hero is-dark">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title is-size-1">
+             {{ .Title }}
+          </h1>
+          <h2 class="subtitle">
+            {{ .Date.Format "02/01/2006" }} - Tiempo de lectura {{ .ReadingTime }} min.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      {{ if .Params.image }}
+        <div class="has-text-centered">
+          <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+        </div>
+      {{ end }}
+
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </section>
+
+    <section class="container content">
+       {{ if .Site.Params.disqusShortname }}
+        <h2>Comentarios</h2>
+        {{ partial "disqus" . }}
+      {{ end }}
+    </section>
+  </body>
+</html>

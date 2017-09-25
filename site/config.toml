@@ -3,7 +3,6 @@ layoutdir = "layouts"
 publishdir = "public"
 baseurl = "/"
 title = "Matías Verdier"
-theme = "hyde"
 DefaultContentLanguage = "es"
 googleAnalytics = "UA-69160067-1"
 
@@ -16,3 +15,29 @@ recommendation = "recommendations"
 author = "Matías Verdier"
 description = "Full Stack Web Developer apasionado por aprender y compartir el conocimiento"
 disqusShortname = "matiasverdier"
+navbarTitle = "Matias Verdier"
+dynamicTitles = true
+
+[[menu.main]]
+  name = "Acerca de mi"
+  url = "/about/"
+  identifier = "fa fa-id-card-o"
+  weight = 2
+
+[[menu.main]]
+  name = "Blog"
+  url = "/posts/"
+  identifier = "fa fa-newspaper-o"
+  weight = 3
+
+[[menu.main]]
+  name = "Ponte en contacto"
+  url = "/contact/"
+  identifier = "fa fa-envelope-o"
+  weight = 6
+
+[[menu.blog]]
+  name = "Categorias"
+  url = "/categories/"
+  identifier = "fa fa-sitemap"
+  weight = 5
